@@ -1,0 +1,598 @@
+2021-09-26 14:50:11,868:INFO:start running: 2021-09-26 14:50:11.868756
+2021-09-26 22:22:31,937:INFO:start running: 2021-09-26 22:22:31.937003
+2021-09-26 22:26:46,562:INFO:MultiOutputClassifier accuracy 0.45396121848142934
+2021-09-26 22:27:40,358:ERROR:an error occurs
+Traceback (most recent call last):
+  File "train_classifier.py", line 158, in main
+    pipe.fit(X_train,y_train)
+  File "D:\softwares\python37\install\lib\site-packages\sklearn\pipeline.py", line 346, in fit
+    self._final_estimator.fit(Xt, y, **fit_params_last_step)
+  File "D:\softwares\python37\install\lib\site-packages\sklearn\multioutput.py", line 368, in fit
+    super().fit(X, Y, sample_weight, **fit_params)
+  File "D:\softwares\python37\install\lib\site-packages\sklearn\multioutput.py", line 182, in fit
+    for i in range(y.shape[1]))
+  File "D:\softwares\python37\install\lib\site-packages\joblib\parallel.py", line 1044, in __call__
+    while self.dispatch_one_batch(iterator):
+  File "D:\softwares\python37\install\lib\site-packages\joblib\parallel.py", line 859, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "D:\softwares\python37\install\lib\site-packages\joblib\parallel.py", line 777, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+  File "D:\softwares\python37\install\lib\site-packages\joblib\_parallel_backends.py", line 208, in apply_async
+    result = ImmediateResult(func)
+  File "D:\softwares\python37\install\lib\site-packages\joblib\_parallel_backends.py", line 572, in __init__
+    self.results = batch()
+  File "D:\softwares\python37\install\lib\site-packages\joblib\parallel.py", line 263, in __call__
+    for func, args, kwargs in self.items]
+  File "D:\softwares\python37\install\lib\site-packages\joblib\parallel.py", line 263, in <listcomp>
+    for func, args, kwargs in self.items]
+  File "D:\softwares\python37\install\lib\site-packages\sklearn\utils\fixes.py", line 222, in __call__
+    return self.function(*args, **kwargs)
+  File "D:\softwares\python37\install\lib\site-packages\sklearn\multioutput.py", line 41, in _fit_estimator
+    estimator.fit(X, y, **fit_params)
+  File "D:\softwares\python37\install\lib\site-packages\sklearn\svm\_classes.py", line 238, in fit
+    self.loss, sample_weight=sample_weight)
+  File "D:\softwares\python37\install\lib\site-packages\sklearn\svm\_base.py", line 937, in _fit_liblinear
+    " class: %r" % classes_[0])
+ValueError: This solver needs samples of at least 2 classes in the data, but the data contains only one class: 0
+2021-09-27 10:50:21,162:INFO:start running: 2021-09-27 10:50:21.162131
+2021-09-27 10:52:33,504:INFO:start running: 2021-09-27 10:52:33.504666
+2021-09-27 10:52:34,115:ERROR:an error occurs
+Traceback (most recent call last):
+  File "d:\online courses\data science nanodegree\Disaster response\train_classifier.py", line 158, in main
+    pipe.fit(X_train[:5,:],y_train[:5,:])
+IndexError: too many indices for array: array is 1-dimensional, but 2 were indexed
+2021-09-27 10:52:59,453:INFO:start running: 2021-09-27 10:52:59.453885
+2021-09-27 10:53:25,517:INFO:start running: 2021-09-27 10:53:25.517246
+2021-09-27 10:53:51,345:INFO:start running: 2021-09-27 10:53:51.345845
+2021-09-27 10:54:28,653:INFO:start running: 2021-09-27 10:54:28.653282
+2021-09-27 10:55:13,755:INFO:start running: 2021-09-27 10:55:13.755950
+2021-09-27 10:59:05,488:INFO:start running: 2021-09-27 10:59:05.488106
+2021-09-27 11:01:06,604:INFO:start running: 2021-09-27 11:01:06.604433
+2021-09-27 11:02:12,564:INFO:start running: 2021-09-27 11:02:12.563147
+2021-09-27 11:05:36,109:INFO:start running: 2021-09-27 11:05:36.109057
+2021-09-27 11:08:31,932:INFO:start running: 2021-09-27 11:08:31.932511
+2021-09-27 11:12:41,332:INFO:MultiOutputClassifier accuracy 0.5803837246977707
+2021-09-27 11:21:52,482:INFO:start running: 2021-09-27 11:21:52.481369
+2021-09-27 11:26:05,286:INFO:start running: 2021-09-27 11:26:05.285669
+2021-09-27 11:28:19,931:INFO:start running: 2021-09-27 11:28:19.931516
+2021-09-27 11:28:37,957:INFO:start running: 2021-09-27 11:28:37.957718
+2021-09-27 12:31:30,988:INFO:start running: 2021-09-27 12:31:30.988950
+2021-09-27 19:04:51,946:INFO:start running: 2021-09-27 19:04:51.946815
+2021-09-27 19:07:19,577:INFO:start running: 2021-09-27 19:07:19.577135
+2021-09-27 19:17:48,490:INFO:start running: 2021-09-27 19:17:48.490778
+2021-09-27 19:19:48,940:INFO:start running: 2021-09-27 19:19:48.940623
+2021-09-27 19:29:28,358:INFO:start running: 2021-09-27 19:29:28.357148
+2021-09-27 19:42:00,179:INFO:start running: 2021-09-27 19:42:00.179030
+2021-09-27 19:44:05,044:INFO:start running: 2021-09-27 19:44:05.044596
+2021-09-27 19:45:56,738:INFO:start running: 2021-09-27 19:45:56.738527
+2021-09-27 20:00:07,244:INFO:start running: 2021-09-27 20:00:07.244545
+2021-09-27 20:16:07,587:INFO:start running: 2021-09-27 20:16:07.587024
+2021-09-27 20:18:15,782:INFO:start running: 2021-09-27 20:18:15.782406
+2021-09-27 20:18:30,668:INFO:start running: 2021-09-27 20:18:30.668855
+2021-09-27 20:22:25,953:INFO:MultiOutputClassifier accuracy 0.47763041247138893
+2021-09-27 20:23:43,618:INFO:MultiOutputClassifier accuracy 0.5852434611715166
+2021-09-27 21:25:43,814:INFO:MultiOutputClassifier accuracy 0.6326232083780987
+2021-09-27 23:22:13,367:INFO:start running: 2021-09-27 23:22:13.367272
+2021-09-27 23:26:06,826:INFO:MultiOutputClassifier accuracy 0.059072677038762664
+2021-09-27 23:27:19,771:INFO:MultiOutputClassifier accuracy 0.46788945140001337
+2021-09-28 00:25:00,457:INFO:MultiOutputClassifier accuracy 0.5060284587134022
+2021-09-28 17:35:37,075:INFO:start running: 2021-09-28 17:35:37.052877
+2021-09-28 17:37:07,388:INFO:MultiOutputClassifier accuracy 0.3621923598350885
+2021-09-28 17:40:49,447:INFO:MultiOutputClassifier accuracy 0.22146593104193515
+2021-09-28 17:42:04,238:INFO:MultiOutputClassifier accuracy 0.46827369727497486
+2021-09-28 18:42:04,625:INFO:MultiOutputClassifier accuracy 0.505373390750378
+2021-09-28 18:43:31,330:INFO:MultiOutputClassifier accuracy 0.47961257625470977
+2021-09-28 18:44:57,805:INFO:MultiOutputClassifier accuracy 0.36325705342536
+2021-09-29 04:37:43,326:INFO:MultiOutputClassifier accuracy 0.4420876729494827
+2021-09-29 04:40:43,509:INFO:MultiOutputClassifier accuracy 0.4903371062545737
+2021-09-29 10:39:04,909:INFO:start running: 2021-09-29 10:39:04.909903
+2021-09-29 10:40:37,782:INFO:MultiOutputClassifier accuracy 0.3621481511701903
+2021-09-29 11:14:15,451:INFO:MultiOutputClassifier accuracy 0.22104962594582697
+2021-09-29 11:17:45,441:INFO:MultiOutputClassifier accuracy 0.4688107260329208
+2021-10-01 16:38:32,603:INFO:start running: 2021-10-01 16:38:32.603586
+2021-10-01 16:54:17,957:INFO:start running: 2021-10-01 16:54:17.957298
+2021-10-01 16:57:20,849:INFO:start running: 2021-10-01 16:57:20.848206
+2021-10-01 17:11:57,513:INFO:start running: 2021-10-01 17:11:57.512116
+2021-10-01 17:40:06,247:INFO:start running: 2021-10-01 17:40:06.247742
+2021-10-01 17:54:27,257:INFO:start running: 2021-10-01 17:54:27.257621
+2021-10-01 18:05:02,910:INFO:start running: 2021-10-01 18:05:02.910965
+2021-10-01 18:11:08,939:INFO:MultiOutputClassifier accuracy 0.36207236488750744
+2021-10-01 18:49:12,606:INFO:MultiOutputClassifier accuracy 0.2901715599025599
+2021-10-02 11:51:56,367:INFO:MultiOutputClassifier accuracy 0.40234859052746674
+2021-10-03 15:42:46,570:INFO:start running: 2021-10-03 15:42:46.570803
+2021-10-03 15:49:02,792:INFO:MultiOutputClassifier accuracy 0.36209131145817813
+2021-10-03 16:53:47,088:INFO:MultiOutputClassifier accuracy 0.4951454179274247
+2021-10-03 17:33:13,825:INFO:start running: 2021-10-03 17:33:13.805311
+2021-10-03 17:39:19,553:INFO:MultiOutputClassifier accuracy 0.19400279182238012
+2021-10-03 18:15:01,393:INFO:MultiOutputClassifier accuracy 0.1795203709337626
+2021-10-03 20:58:51,781:INFO:start running: 2021-10-03 20:58:51.761568
+2021-10-04 10:52:08,031:INFO:start running: 2021-10-04 10:52:08.031562
+2021-10-04 10:57:55,313:INFO:MultiOutputClassifier accuracy 0.19404631460237393()
+2021-10-04 12:02:05,835:INFO:MultiOutputClassifier accuracy 0.6098671749598693(decision tree)
+2021-10-04 12:31:54,741:INFO:MultiOutputClassifier accuracy 0.19560602352857276(random forest)
+2021-10-05 09:57:40,780:INFO:start running: 2021-10-05 09:57:40.760472
+2021-10-05 16:02:09,933:INFO:start running: 2021-10-05 16:02:09.913147
+2021-10-06 04:29:40,804:INFO:MultiOutputClassifier accuracy 0.6376621168468739(adboost)
+2021-10-06 06:52:32,688:INFO:MultiOutputClassifier accuracy 0.40464920535584487(Gaussian NB)
+2021-10-06 13:08:46,185:INFO:start running: 2021-10-06 13:08:46.164541
+2021-10-06 13:39:20,197:INFO:MultiOutputClassifier accuracy 0.19472964750878238
+2021-10-06 16:52:42,225:INFO:start running: 2021-10-06 16:52:42.225960
+2021-10-07 22:17:15,054:INFO:start running: 2021-10-07 22:17:15.034701
+2021-10-11 11:58:46,145:INFO:start running: 2021-10-11 11:58:46.145588
+2021-10-11 20:45:15,769:INFO:start running: 2021-10-11 20:45:15.769014
+2021-10-11 22:33:54,086:INFO:start running: 2021-10-11 22:33:54.086885
+2021-10-12 10:49:56,351:INFO:MultiOutputClassifier f1 score: 0.6390319089250345(adboost,default,n_estimators=50)
+2021-10-12 14:14:09,079:INFO:start running: 2021-10-12 14:14:09.079540
+2021-10-12 16:59:13,534:INFO:start running: 2021-10-12 16:59:13.534499
+2021-10-13 17:04:06,181:INFO:MultiOutputClassifier f1 score: 0.6461327026120097(adboost,default,n_estimators=100)
+
+2021-10-14 10:17:07,067:INFO:start running: 2021-10-14 10:17:07.067652
+2021-10-14 13:37:53,399:INFO:start running: 2021-10-14 13:37:53.399461
+2021-10-14 13:37:55,627:INFO: * Restarting with stat
+2021-10-14 13:37:58,895:INFO:start running: 2021-10-14 13:37:58.895118
+2021-10-14 13:38:00,116:WARNING: * Debugger is active!
+2021-10-14 13:38:00,176:INFO: * Debugger PIN: 119-835-780
+2021-10-14 13:38:00,628:WARNING: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2021-10-14 13:38:00,629:INFO: * Running on http://131.180.23.252:3001/ (Press CTRL+C to quit)
+2021-10-14 13:43:54,467:INFO:127.0.0.1 - - [14/Oct/2021 13:43:54] "[35m[1mGET /index HTTP/1.1[0m" 500 -
+2021-10-14 13:43:54,502:INFO:127.0.0.1 - - [14/Oct/2021 13:43:54] "GET /index?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2021-10-14 13:43:54,601:INFO:127.0.0.1 - - [14/Oct/2021 13:43:54] "GET /index?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2021-10-14 13:43:54,912:INFO:127.0.0.1 - - [14/Oct/2021 13:43:54] "GET /index?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+2021-10-14 13:43:54,989:INFO:127.0.0.1 - - [14/Oct/2021 13:43:54] "GET /index?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2021-10-14 13:43:55,162:INFO:127.0.0.1 - - [14/Oct/2021 13:43:55] "GET /index?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2021-10-14 13:44:30,159:INFO: * Detected change in 'D:\\online courses\\data science nanodegree\\Disaster response\\DisasterResponseapp\\run.py', reloading
+2021-10-14 13:44:30,552:INFO: * Restarting with stat
+2021-10-14 13:44:34,236:INFO:start running: 2021-10-14 13:44:34.236510
+2021-10-14 13:44:35,721:WARNING: * Debugger is active!
+2021-10-14 13:44:35,779:INFO: * Debugger PIN: 119-835-780
+2021-10-14 13:44:36,265:WARNING: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2021-10-14 13:44:36,265:INFO: * Running on http://131.180.23.252:3001/ (Press CTRL+C to quit)
+2021-10-14 13:44:37,938:INFO: * Detected change in 'D:\\online courses\\data science nanodegree\\Disaster response\\DisasterResponseapp\\run.py', reloading
+2021-10-14 13:44:38,203:INFO: * Restarting with stat
+2021-10-14 13:44:42,109:INFO:start running: 2021-10-14 13:44:42.109766
+2021-10-14 13:44:43,615:WARNING: * Debugger is active!
+2021-10-14 13:44:43,652:INFO: * Debugger PIN: 119-835-780
+2021-10-14 13:44:44,185:WARNING: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2021-10-14 13:44:44,185:INFO: * Running on http://131.180.23.252:3001/ (Press CTRL+C to quit)
+2021-10-14 13:44:54,735:INFO: * Detected change in 'D:\\online courses\\data science nanodegree\\Disaster response\\DisasterResponseapp\\run.py', reloading
+2021-10-14 13:44:54,971:INFO: * Restarting with stat
+2021-10-14 13:44:58,586:INFO:start running: 2021-10-14 13:44:58.586700
+2021-10-14 13:44:59,997:WARNING: * Debugger is active!
+2021-10-14 13:45:00,037:INFO: * Debugger PIN: 119-835-780
+2021-10-14 13:45:00,478:WARNING: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2021-10-14 13:45:00,478:INFO: * Running on http://131.180.23.252:3001/ (Press CTRL+C to quit)
+2021-10-14 13:45:24,044:INFO: * Detected change in 'D:\\online courses\\data science nanodegree\\Disaster response\\DisasterResponseapp\\run.py', reloading
+2021-10-14 13:45:24,310:INFO: * Restarting with stat
+2021-10-14 13:45:27,812:INFO:start running: 2021-10-14 13:45:27.812278
+2021-10-14 13:45:29,381:WARNING: * Debugger is active!
+2021-10-14 13:45:29,420:INFO: * Debugger PIN: 119-835-780
+2021-10-14 13:45:29,876:WARNING: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2021-10-14 13:45:29,877:INFO: * Running on http://131.180.23.252:3001/ (Press CTRL+C to quit)
+2021-10-14 13:45:56,223:INFO:start running: 2021-10-14 13:45:56.223445
+2021-10-14 13:45:57,586:INFO: * Restarting with stat
+2021-10-14 13:46:01,226:INFO:start running: 2021-10-14 13:46:01.226480
+2021-10-14 13:46:02,768:WARNING: * Debugger is active!
+2021-10-14 13:46:02,827:INFO: * Debugger PIN: 119-835-780
+2021-10-14 13:46:03,264:WARNING: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2021-10-14 13:46:03,265:INFO: * Running on http://131.180.23.252:3001/ (Press CTRL+C to quit)
+2021-10-14 13:46:39,782:INFO:127.0.0.1 - - [14/Oct/2021 13:46:39] "[33mGET /master HTTP/1.1[0m" 404 -
+2021-10-14 13:46:39,902:INFO:127.0.0.1 - - [14/Oct/2021 13:46:39] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2021-10-14 13:46:52,866:INFO:127.0.0.1 - - [14/Oct/2021 13:46:52] "[35m[1mGET /index HTTP/1.1[0m" 500 -
+2021-10-14 13:46:52,889:INFO:127.0.0.1 - - [14/Oct/2021 13:46:52] "GET /index?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2021-10-14 13:46:53,191:INFO:127.0.0.1 - - [14/Oct/2021 13:46:53] "GET /index?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2021-10-14 13:46:53,512:INFO:127.0.0.1 - - [14/Oct/2021 13:46:53] "GET /index?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+2021-10-14 13:46:53,641:INFO:127.0.0.1 - - [14/Oct/2021 13:46:53] "GET /index?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2021-10-14 13:48:01,549:INFO: * Detected change in 'D:\\online courses\\data science nanodegree\\Disaster response\\DisasterResponseapp\\run.py', reloading
+2021-10-14 13:48:01,819:INFO: * Restarting with stat
+2021-10-14 13:48:05,915:INFO:start running: 2021-10-14 13:48:05.915135
+2021-10-14 13:48:07,408:WARNING: * Debugger is active!
+2021-10-14 13:48:07,448:INFO: * Debugger PIN: 119-835-780
+2021-10-14 13:48:07,903:WARNING: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2021-10-14 13:48:07,903:INFO: * Running on http://131.180.23.252:3001/ (Press CTRL+C to quit)
+2021-10-14 13:48:24,755:INFO:start running: 2021-10-14 13:48:24.755592
+2021-10-14 13:48:26,165:INFO: * Restarting with stat
+2021-10-14 13:48:29,471:INFO:start running: 2021-10-14 13:48:29.471417
+2021-10-14 13:48:30,668:WARNING: * Debugger is active!
+2021-10-14 13:48:30,704:INFO: * Debugger PIN: 119-835-780
+2021-10-14 13:48:31,112:WARNING: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2021-10-14 13:48:31,112:INFO: * Running on http://131.180.23.252:3001/ (Press CTRL+C to quit)
+2021-10-14 13:49:32,271:INFO:127.0.0.1 - - [14/Oct/2021 13:49:32] "GET /index HTTP/1.1" 200 -
+2021-10-14 13:49:55,139:INFO:127.0.0.1 - - [14/Oct/2021 13:49:55] "GET /index HTTP/1.1" 200 -
+2021-10-14 13:50:07,100:INFO:127.0.0.1 - - [14/Oct/2021 13:50:07] "[35m[1mGET /go HTTP/1.1[0m" 500 -
+2021-10-14 13:50:07,139:INFO:127.0.0.1 - - [14/Oct/2021 13:50:07] "GET /go?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2021-10-14 13:50:07,440:INFO:127.0.0.1 - - [14/Oct/2021 13:50:07] "GET /go?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2021-10-14 13:50:07,753:INFO:127.0.0.1 - - [14/Oct/2021 13:50:07] "GET /go?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+2021-10-14 13:50:07,762:INFO:127.0.0.1 - - [14/Oct/2021 13:50:07] "GET /go?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2021-10-14 13:50:08,003:INFO:127.0.0.1 - - [14/Oct/2021 13:50:08] "GET /go?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2021-10-14 13:50:15,661:INFO:127.0.0.1 - - [14/Oct/2021 13:50:15] "GET /index HTTP/1.1" 200 -
+2021-10-14 22:27:31,196:INFO:start running: 2021-10-14 22:27:31.195100
+2021-10-17 15:33:27,677:INFO:start running: 2021-10-17 15:33:27.677395
+2021-10-17 15:36:56,367:INFO:start running: 2021-10-17 15:36:56.367555
+2021-10-17 15:44:29,372:INFO:start running: 2021-10-17 15:44:29.372566
+2021-10-17 15:57:20,075:INFO:start running: 2021-10-17 15:57:20.075975
+2021-10-17 16:48:57,955:INFO:start running: 2021-10-17 16:48:57.955005
+2021-10-17 17:05:16,334:INFO:start running: 2021-10-17 17:05:16.334334
+2021-10-17 17:17:46,075:INFO:start running: 2021-10-17 17:17:46.074234
+2021-10-17 20:01:39,566:INFO:start running: 2021-10-17 20:01:39.566416
+2021-10-17 20:26:48,713:INFO:start running: 2021-10-17 20:26:48.713382
+2021-10-18 10:06:51,152:INFO:start running: 2021-10-18 10:06:51.140409
+2021-10-18 16:36:27,957:INFO:start running: 2021-10-18 16:36:27.957392
+2021-10-18 16:37:39,770:INFO:start running: 2021-10-18 16:37:39.770880
+2021-10-18 16:41:56,718:INFO:start running: 2021-10-18 16:41:56.718802
+2021-10-18 16:43:33,370:INFO:start running: 2021-10-18 16:43:33.370608
+2021-10-18 18:01:03,224:INFO:start running: 2021-10-18 18:01:03.224346
+2021-10-18 19:04:17,668:INFO:start running: 2021-10-18 19:04:17.668147
+2021-10-18 19:20:17,089:INFO:start running: 2021-10-18 19:20:17.088195
+2021-10-18 20:54:09,293:INFO:start running: 2021-10-18 20:54:09.293548
+2021-10-18 22:18:56,866:INFO:the classification report:
+2021-10-18 22:18:56,876:INFO:              precision    recall  f1-score   support
+
+           0       0.65      0.45      0.53      1240
+           1       0.85      0.92      0.88      4038
+
+    accuracy                           0.81      5278
+   macro avg       0.75      0.69      0.71      5278
+weighted avg       0.80      0.81      0.80      5278
+
+2021-10-18 22:18:56,884:INFO:              precision    recall  f1-score   support
+
+           0       0.91      0.96      0.93      4330
+           1       0.76      0.54      0.63       948
+
+    accuracy                           0.89      5278
+   macro avg       0.83      0.75      0.78      5278
+weighted avg       0.88      0.89      0.88      5278
+
+2021-10-18 22:18:56,891:INFO:              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00      5253
+           1       0.40      0.08      0.13        25
+
+    accuracy                           1.00      5278
+   macro avg       0.70      0.54      0.57      5278
+weighted avg       0.99      1.00      0.99      5278
+
+2021-10-18 22:18:56,900:INFO:              precision    recall  f1-score   support
+
+           0       0.77      0.86      0.81      3065
+           1       0.77      0.63      0.69      2213
+
+    accuracy                           0.77      5278
+   macro avg       0.77      0.75      0.75      5278
+weighted avg       0.77      0.77      0.76      5278
+
+2021-10-18 22:18:56,917:INFO:              precision    recall  f1-score   support
+
+           0       0.94      0.98      0.96      4863
+           1       0.60      0.27      0.38       415
+
+    accuracy                           0.93      5278
+   macro avg       0.77      0.63      0.67      5278
+weighted avg       0.91      0.93      0.92      5278
+
+2021-10-18 22:18:56,924:INFO:              precision    recall  f1-score   support
+
+           0       0.97      0.99      0.98      5011
+           1       0.65      0.34      0.45       267
+
+    accuracy                           0.96      5278
+   macro avg       0.81      0.67      0.71      5278
+weighted avg       0.95      0.96      0.95      5278
+
+2021-10-18 22:18:58,117:INFO:              precision    recall  f1-score   support
+
+           0       0.98      1.00      0.99      5139
+           1       0.53      0.15      0.23       139
+
+    accuracy                           0.97      5278
+   macro avg       0.75      0.57      0.61      5278
+weighted avg       0.97      0.97      0.97      5278
+
+2021-10-18 22:18:58,126:INFO:              precision    recall  f1-score   support
+
+           0       0.98      1.00      0.99      5183
+           1       0.29      0.04      0.07        95
+
+    accuracy                           0.98      5278
+   macro avg       0.63      0.52      0.53      5278
+weighted avg       0.97      0.98      0.97      5278
+
+2021-10-18 22:18:58,135:INFO:              precision    recall  f1-score   support
+
+           0       0.98      0.99      0.98      5109
+           1       0.56      0.36      0.43       169
+
+    accuracy                           0.97      5278
+   macro avg       0.77      0.67      0.71      5278
+weighted avg       0.97      0.97      0.97      5278
+
+2021-10-18 22:18:58,144:INFO:              precision    recall  f1-score   support
+
+           0       0.98      0.98      0.98      4933
+           1       0.74      0.65      0.69       345
+
+    accuracy                           0.96      5278
+   macro avg       0.86      0.82      0.84      5278
+weighted avg       0.96      0.96      0.96      5278
+
+2021-10-18 22:18:58,153:INFO:              precision    recall  f1-score   support
+
+           0       0.96      0.98      0.97      4681
+           1       0.78      0.68      0.72       597
+
+    accuracy                           0.94      5278
+   macro avg       0.87      0.83      0.85      5278
+weighted avg       0.94      0.94      0.94      5278
+
+2021-10-18 22:18:58,161:INFO:              precision    recall  f1-score   support
+
+           0       0.95      0.98      0.97      4782
+           1       0.75      0.51      0.61       496
+
+    accuracy                           0.94      5278
+   macro avg       0.85      0.75      0.79      5278
+weighted avg       0.93      0.94      0.93      5278
+
+2021-10-18 22:18:58,170:INFO:              precision    recall  f1-score   support
+
+           0       0.99      1.00      0.99      5181
+           1       0.69      0.35      0.47        97
+
+    accuracy                           0.99      5278
+   macro avg       0.84      0.67      0.73      5278
+weighted avg       0.98      0.99      0.98      5278
+
+2021-10-18 22:18:58,178:INFO:              precision    recall  f1-score   support
+
+           0       0.98      0.99      0.99      5148
+           1       0.55      0.27      0.36       130
+
+    accuracy                           0.98      5278
+   macro avg       0.76      0.63      0.67      5278
+weighted avg       0.97      0.98      0.97      5278
+
+2021-10-18 22:18:58,185:INFO:              precision    recall  f1-score   support
+
+           0       0.99      1.00      1.00      5234
+           1       0.38      0.11      0.18        44
+
+    accuracy                           0.99      5278
+   macro avg       0.69      0.56      0.59      5278
+weighted avg       0.99      0.99      0.99      5278
+
+2021-10-18 22:18:58,193:INFO:              precision    recall  f1-score   support
+
+           0       0.98      0.99      0.98      5116
+           1       0.51      0.27      0.35       162
+
+    accuracy                           0.97      5278
+   macro avg       0.74      0.63      0.67      5278
+weighted avg       0.96      0.97      0.96      5278
+
+2021-10-18 22:18:58,202:INFO:              precision    recall  f1-score   support
+
+           0       0.98      0.99      0.98      5042
+           1       0.75      0.47      0.57       236
+
+    accuracy                           0.97      5278
+   macro avg       0.86      0.73      0.78      5278
+weighted avg       0.97      0.97      0.97      5278
+
+2021-10-18 22:18:58,210:INFO:              precision    recall  f1-score   support
+
+           0       0.89      0.97      0.93      4576
+           1       0.48      0.18      0.27       702
+
+    accuracy                           0.87      5278
+   macro avg       0.69      0.58      0.60      5278
+weighted avg       0.83      0.87      0.84      5278
+
+2021-10-18 22:18:58,218:INFO:              precision    recall  f1-score   support
+
+           0       0.94      0.99      0.96      4941
+           1       0.34      0.10      0.16       337
+
+    accuracy                           0.93      5278
+   macro avg       0.64      0.54      0.56      5278
+weighted avg       0.90      0.93      0.91      5278
+
+2021-10-18 22:18:58,226:INFO:              precision    recall  f1-score   support
+
+           0       0.96      0.99      0.98      5036
+           1       0.58      0.24      0.33       242
+
+    accuracy                           0.96      5278
+   macro avg       0.77      0.61      0.66      5278
+weighted avg       0.95      0.96      0.95      5278
+
+2021-10-18 22:18:58,234:INFO:              precision    recall  f1-score   support
+
+           0       0.97      0.99      0.98      5009
+           1       0.61      0.41      0.49       269
+
+    accuracy                           0.96      5278
+   macro avg       0.79      0.70      0.73      5278
+weighted avg       0.95      0.96      0.95      5278
+
+2021-10-18 22:18:58,241:INFO:              precision    recall  f1-score   support
+
+           0       0.99      0.99      0.99      5185
+           1       0.50      0.30      0.38        93
+
+    accuracy                           0.98      5278
+   macro avg       0.74      0.65      0.68      5278
+weighted avg       0.98      0.98      0.98      5278
+
+2021-10-18 22:18:58,249:INFO:              precision    recall  f1-score   support
+
+           0       0.99      1.00      1.00      5242
+           1       0.00      0.00      0.00        36
+
+    accuracy                           0.99      5278
+   macro avg       0.50      0.50      0.50      5278
+weighted avg       0.99      0.99      0.99      5278
+
+2021-10-18 22:18:58,256:INFO:              precision    recall  f1-score   support
+
+           0       0.99      1.00      0.99      5229
+           1       0.12      0.04      0.06        49
+
+    accuracy                           0.99      5278
+   macro avg       0.56      0.52      0.53      5278
+weighted avg       0.98      0.99      0.99      5278
+
+2021-10-18 22:18:58,264:INFO:              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00      5254
+           1       0.00      0.00      0.00        24
+
+    accuracy                           0.99      5278
+   macro avg       0.50      0.50      0.50      5278
+weighted avg       0.99      0.99      0.99      5278
+
+2021-10-18 22:18:58,272:INFO:              precision    recall  f1-score   support
+
+           0       0.99      1.00      0.99      5220
+           1       0.27      0.12      0.17        58
+
+    accuracy                           0.99      5278
+   macro avg       0.63      0.56      0.58      5278
+weighted avg       0.98      0.99      0.98      5278
+
+2021-10-18 22:18:58,279:INFO:              precision    recall  f1-score   support
+
+           0       0.96      0.99      0.97      5046
+           1       0.28      0.09      0.14       232
+
+    accuracy                           0.95      5278
+   macro avg       0.62      0.54      0.56      5278
+weighted avg       0.93      0.95      0.94      5278
+
+2021-10-18 22:18:58,288:INFO:              precision    recall  f1-score   support
+
+           0       0.89      0.95      0.92      3837
+           1       0.84      0.67      0.75      1441
+
+    accuracy                           0.88      5278
+   macro avg       0.86      0.81      0.83      5278
+weighted avg       0.87      0.88      0.87      5278
+
+2021-10-18 22:18:58,296:INFO:              precision    recall  f1-score   support
+
+           0       0.96      0.99      0.98      4847
+           1       0.86      0.57      0.69       431
+
+    accuracy                           0.96      5278
+   macro avg       0.91      0.78      0.83      5278
+weighted avg       0.95      0.96      0.95      5278
+
+2021-10-18 22:18:58,305:INFO:              precision    recall  f1-score   support
+
+           0       0.95      0.98      0.97      4798
+           1       0.75      0.51      0.61       480
+
+    accuracy                           0.94      5278
+   macro avg       0.85      0.75      0.79      5278
+weighted avg       0.93      0.94      0.94      5278
+
+2021-10-18 22:18:58,312:INFO:              precision    recall  f1-score   support
+
+           0       0.99      1.00      0.99      5219
+           1       0.52      0.25      0.34        59
+
+    accuracy                           0.99      5278
+   macro avg       0.75      0.63      0.67      5278
+weighted avg       0.99      0.99      0.99      5278
+
+2021-10-18 22:18:58,320:INFO:              precision    recall  f1-score   support
+
+           0       0.97      0.99      0.98      4783
+           1       0.88      0.75      0.81       495
+
+    accuracy                           0.97      5278
+   macro avg       0.93      0.87      0.89      5278
+weighted avg       0.96      0.97      0.97      5278
+
+2021-10-18 22:18:58,328:INFO:              precision    recall  f1-score   support
+
+           0       0.99      1.00      0.99      5162
+           1       0.71      0.39      0.50       116
+
+    accuracy                           0.98      5278
+   macro avg       0.85      0.69      0.75      5278
+weighted avg       0.98      0.98      0.98      5278
+
+2021-10-18 22:18:58,336:INFO:              precision    recall  f1-score   support
+
+           0       0.96      0.99      0.98      5029
+           1       0.47      0.18      0.26       249
+
+    accuracy                           0.95      5278
+   macro avg       0.72      0.59      0.62      5278
+weighted avg       0.94      0.95      0.94      5278
+
+2021-10-18 22:18:58,345:INFO:              precision    recall  f1-score   support
+
+           0       0.88      0.96      0.92      4207
+           1       0.74      0.50      0.59      1071
+
+    accuracy                           0.86      5278
+   macro avg       0.81      0.73      0.76      5278
+weighted avg       0.85      0.86      0.85      5278
+
+2021-10-18 22:18:58,365:INFO:f1 score 0.6390380895429811, cv results {'mean_fit_time': array([138.48488646, 197.51015882, 218.4127172 , 339.51936588]), 'std_fit_time': array([0.89871016, 4.67249045, 0.79725887, 2.5940636 ]), 'mean_score_time': array([14.1966887 , 15.6905232 , 15.62961898, 18.90479803]), 'std_score_time': array([0.20788417, 0.14169938, 0.22933197, 0.13369781]), 'param_classifier__estimator__n_estimators': masked_array(data=[50, 50, 100, 100],
+             mask=[False, False, False, False],
+       fill_value='?',
+            dtype=object), 'param_feature__ngram_range': masked_array(data=[(1, 1), (3, 3), (1, 1), (3, 3)],
+             mask=[False, False, False, False],
+       fill_value='?',
+            dtype=object), 'params': [{'classifier__estimator__n_estimators': 50, 'feature__ngram_range': (1, 1)}, {'classifier__estimator__n_estimators': 50, 'feature__ngram_range': (3, 3)}, {'classifier__estimator__n_estimators': 100, 'feature__ngram_range': (1, 1)}, {'classifier__estimator__n_estimators': 100, 'feature__ngram_range': (3, 3)}], 'split0_test_score': array([0.63205329, 0.40391069, 0.63724838, 0.43394366]), 'split1_test_score': array([0.62372479, 0.40004783, 0.63210445, 0.43127762]), 'split2_test_score': array([0.63582328, 0.40704193, 0.64033963, 0.44113002]), 'split3_test_score': array([0.62598906, 0.40007008, 0.63293134, 0.42900792]), 'split4_test_score': array([0.63095556, 0.40851198, 0.63663562, 0.44086829]), 'mean_test_score': array([0.6297092 , 0.4039165 , 0.63585188, 0.4352455 ]), 'std_test_score': array([0.0043378 , 0.00348277, 0.00300923, 0.00495156]), 'rank_test_score': array([2, 4, 1, 3])}
+2021-10-19 19:52:53,531:INFO:start running: 2021-10-19 19:52:53.531881
+2021-10-19 19:56:40,650:INFO:start running: 2021-10-19 19:56:40.650511
+2021-10-20 11:08:11,249:INFO:start running: 2021-10-20 11:08:11.249157
+2021-10-20 11:30:55,821:INFO:start running: 2021-10-20 11:30:55.820828
+2021-10-20 11:44:26,596:INFO:start running: 2021-10-20 11:44:26.596095
+2021-10-20 11:45:55,802:INFO:start running: 2021-10-20 11:45:55.802802
+2021-10-20 17:18:32,348:INFO:start running: 2021-10-20 17:18:32.348825
+2021-10-20 19:38:39,677:INFO:f1 score 0.6420752996744971, cv results {'mean_fit_time': array([541.64687738, 472.31531072, 461.92819138]), 'std_fit_time': array([2.62505456, 1.81313594, 4.18166981]), 'mean_score_time': array([22.05496821, 20.51427193, 20.14905543]), 'std_score_time': array([0.54464467, 0.34400735, 0.18014374]), 'param_classifier__estimator__n_estimators': masked_array(data=[300, 300, 300],
+             mask=[False, False, False],
+       fill_value='?',
+            dtype=object), 'param_feature__min_df': masked_array(data=[1, 5, 8],
+             mask=[False, False, False],
+       fill_value='?',
+            dtype=object), 'param_feature__ngram_range': masked_array(data=[(1, 1), (1, 1), (1, 1)],
+             mask=[False, False, False],
+       fill_value='?',
+            dtype=object), 'params': [{'classifier__estimator__n_estimators': 300, 'feature__min_df': 1, 'feature__ngram_range': (1, 1)}, {'classifier__estimator__n_estimators': 300, 'feature__min_df': 5, 'feature__ngram_range': (1, 1)}, {'classifier__estimator__n_estimators': 300, 'feature__min_df': 8, 'feature__ngram_range': (1, 1)}], 'split0_test_score': array([0.6338768 , 0.6307313 , 0.63124517]), 'split1_test_score': array([0.64261272, 0.64174029, 0.63894019]), 'split2_test_score': array([0.62951295, 0.6303145 , 0.63047458]), 'split3_test_score': array([0.62993737, 0.62602389, 0.62708902]), 'split4_test_score': array([0.6376327 , 0.63619847, 0.63710221]), 'mean_test_score': array([0.63471451, 0.63300169, 0.63297024]), 'std_test_score': array([0.00492903, 0.00543411, 0.00439332]), 'rank_test_score': array([1, 2, 3])}
+2021-10-20 23:55:38,353:INFO:start running: 2021-10-20 23:55:38.353845
+2021-10-21 11:44:42,510:INFO:start running: 2021-10-21 11:44:42.510269
+2021-10-21 22:09:42,202:INFO:f1 score 0.637743722872054, cv results {'mean_fit_time': array([ 610.29554772, 1314.90325499,  500.48796153,  643.99075704,
+        766.63147821, 1724.69684272,  631.4629457 ,  822.57110162]), 'std_fit_time': array([16.29814715,  4.08833346,  3.61047174,  1.68506366,  1.74914652,
+        9.41831467,  0.9516138 ,  1.74170465]), 'mean_score_time': array([36.12418771, 47.95158167, 34.09893212, 35.37763624, 39.46668439,
+       56.21485281, 36.26640239, 38.63651557]), 'std_score_time': array([0.9187127 , 0.21647746, 0.68189504, 0.06988065, 0.97081667,
+       1.02692831, 0.16654433, 0.12713951]), 'param_classifier__estimator__n_estimators': masked_array(data=[300, 300, 300, 300, 400, 400, 400, 400],
+             mask=[False, False, False, False, False, False, False, False],
+       fill_value='?',
+            dtype=object), 'param_feature__densetfidf__min_df': masked_array(data=[1, 1, 15, 15, 1, 1, 15, 15],
+             mask=[False, False, False, False, False, False, False, False],
+       fill_value='?',
+            dtype=object), 'param_feature__densetfidf__ngram_range': masked_array(data=[(1, 1), (1, 2), (1, 1), (1, 2), (1, 1), (1, 2), (1, 1),
+                   (1, 2)],
+             mask=[False, False, False, False, False, False, False, False],
+       fill_value='?',
+            dtype=object), 'params': [{'classifier__estimator__n_estimators': 300, 'feature__densetfidf__min_df': 1, 'feature__densetfidf__ngram_range': (1, 1)}, {'classifier__estimator__n_estimators': 300, 'feature__densetfidf__min_df': 1, 'feature__densetfidf__ngram_range': (1, 2)}, {'classifier__estimator__n_estimators': 300, 'feature__densetfidf__min_df': 15, 'feature__densetfidf__ngram_range': (1, 1)}, {'classifier__estimator__n_estimators': 300, 'feature__densetfidf__min_df': 15, 'feature__densetfidf__ngram_range': (1, 2)}, {'classifier__estimator__n_estimators': 400, 'feature__densetfidf__min_df': 1, 'feature__densetfidf__ngram_range': (1, 1)}, {'classifier__estimator__n_estimators': 400, 'feature__densetfidf__min_df': 1, 'feature__densetfidf__ngram_range': (1, 2)}, {'classifier__estimator__n_estimators': 400, 'feature__densetfidf__min_df': 15, 'feature__densetfidf__ngram_range': (1, 1)}, {'classifier__estimator__n_estimators': 400, 'feature__densetfidf__min_df': 15, 'feature__densetfidf__ngram_range': (1, 2)}], 'split0_test_score': array([0.63874698, 0.63761276, 0.63554918, 0.63342869, 0.63718358,
+       0.63285217, 0.63227183, 0.62983566]), 'split1_test_score': array([0.63798092, 0.63811139, 0.63851656, 0.63684066, 0.63455237,
+       0.63475377, 0.63292576, 0.63345265]), 'split2_test_score': array([0.63756468, 0.63799216, 0.63037311, 0.63094853, 0.63613438,
+       0.63729564, 0.63053603, 0.6294379 ]), 'split3_test_score': array([0.6313361 , 0.62932976, 0.62660117, 0.62645792, 0.63135474,
+       0.62586734, 0.62732847, 0.62422227]), 'split4_test_score': array([0.64660985, 0.63765241, 0.63980554, 0.63405865, 0.64109641,
+       0.63830555, 0.6359611 , 0.63197745]), 'mean_test_score': array([0.63844771, 0.6361397 , 0.63416911, 0.63234689, 0.6360643 ,
+       0.6338149 , 0.63180464, 0.62978519]), 'std_test_score': array([0.0048638 , 0.00341036, 0.00498513, 0.00349084, 0.00319518,
+       0.00441029, 0.00284242, 0.00314088]), 'rank_test_score': array([1, 2, 4, 6, 3, 5, 7, 8])}
