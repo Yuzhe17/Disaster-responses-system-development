@@ -49,7 +49,7 @@ disaster_response.db: a sqlite database storing all the disaster response messag
 
 ## Screenshots
 ![homepage](web_app_screenshots/homepage.JPG)
-![classification](web_app_screenshots\homepage.JPG)
+![classification](web_app_screenshots/classification_result.JPG)
 
 ## Acknowledgements
 Thanks to [figure eight](https://appen.com/) for providing the dataset
