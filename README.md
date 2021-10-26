@@ -48,7 +48,7 @@ train_classifier.py: a python script implementing a machine learning pipeline
 disaster_response.db: a sqlite database storing all the disaster response messages and categories
 
 ## Screenshots
-![homepage](web_app_screenshots\homepage.JPG)
+![homepage](web_app_screenshots/homepage.JPG)
 ![classification](web_app_screenshots\homepage.JPG)
 
 ## Acknowledgements
