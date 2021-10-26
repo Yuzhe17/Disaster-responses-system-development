@@ -1,6 +1,6 @@
 # Disaster Response Classification System
 
-![homepage](web_app_screenshots\homepage.JPG)
+![homepage](web_app_screenshots/homepage.JPG)
 
 ## Introduction
 
