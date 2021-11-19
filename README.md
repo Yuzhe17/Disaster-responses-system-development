@@ -17,7 +17,7 @@ specific message with different categories. The projects can be divided into the
 
 ### Dependencies
 
-In order to use the project, you need the following python packages:
+n order to use the project, you need the following python packages:
 1. numpy, pandas
 2. sklearn, nltk
 3. SQLAlchemy
@@ -37,15 +37,23 @@ To deploy the web app, go the DisasterResponse_app and run the run.py, and go to
 [http://localhost:3001/index](http://localhost:3001/index)
 
 ## Files
-DisasterResponse_app/templates/go.html: a html file which displays the classification result
-DisasterResponse_app/templates/master.html: a html file which displays the visualizations of the data
-DisasterResponse_app/custom_transformers.py: a python scripts containing custom sklearn transformers
-DisasterResponse/run.py: a python script containing web app initiation and routes
-data/: a folder containing two csv files of meassages and categories of all disaster responses
-model/classifier.pkl: pickle file of a sklearn classifier
-process_data.py: a python script implementing an ETL pipeline
-train_classifier.py: a python script implementing a machine learning pipeline
-disaster_response.db: a sqlite database storing all the disaster response messages and categories
+1. DisasterResponse_app/templates/go.html: a html file which displays the classification result
+
+2. DisasterResponse_app/templates/master.html: a html file which displays the visualizations of the data
+
+3. DisasterResponse_app/custom_transformers.py: a python scripts containing custom sklearn transformers
+
+4. DisasterResponse/run.py: a python script containing web app initiation and routes
+
+5. data/: a folder containing two csv files of meassages and categories of all disaster responses
+
+6. model/classifier.pkl: pickle file of a sklearn classifier
+
+7. process_data.py: a python script implementing an ETL pipeline
+
+8. train_classifier.py: a python script implementing a machine learning pipeline
+
+9. disaster_response.db: a sqlite database storing all the disaster response messages and categories
 
 ## Screenshots
 ![homepage](web_app_screenshots/homepage.JPG)
